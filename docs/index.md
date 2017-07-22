@@ -227,7 +227,7 @@ sudo mkdir /opt/kitsu
 cd /opt/kitsu
 sudo git clone -b build https://github.com/cgwire/kitsu
 sudo git checkout build
-chowm -R zou:www-data /opt/kitsu
+chown -R zou:www-data /opt/kitsu
 ```
 
 Then we need to adapt the Nginx configuration to allow it to serve it properly:
